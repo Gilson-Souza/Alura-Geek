@@ -16,7 +16,6 @@ export class UpdateComponent implements OnInit{
 
   public categories: string[] = ['Diversos', 'Console', 'Star Wars'];
   private id: number;
-  private produto!: Product;
   private delay: number = 2000;
 
   modelo = {
