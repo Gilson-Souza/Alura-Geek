@@ -6,6 +6,7 @@ import {
   MatSnackBar
 } from '@angular/material/snack-bar';
 
+
 @Component({
   selector: 'app-one-product',
   templateUrl: './one-product.component.html',

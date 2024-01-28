@@ -10,7 +10,7 @@
             <div class="product__info">
                 <h2 class="product__name">{{ product.name }}</h2>
                 <p class="product__description">{{ product.description }}</p>
-                <p class="product__price">{{ product.price | currency }}</p>
+                <p class="product__price">R$ {{ product.price | number:'1.2-2'}}</p>
                 <div class="_btnConfig" *ngIf="estaLogado(); else loginSection">
                     <button class="btn btn-primary">Add to cart(em desenvolvimento)</button>
                     <button class="btn btn-delete" (click)="excluirProduto()">Excluir</button>
