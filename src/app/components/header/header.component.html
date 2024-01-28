@@ -6,7 +6,7 @@
       <p routerLink="/home"><img src="../../../assets/img/Texto.svg" alt="" class="texto__topo"></p>
     </div>
     <div class="pesquisa item_cabecalho" [style.position]="displayPosition" [style.max-width]="maxSearch">
-        <input type="text"  class="aba__pesquisa" [formControl]="searchControl" [style.display]="displaySearch">     
+        <input #pesquisa type="text"  class="aba__pesquisa" [formControl]="searchControl" [style.display]="displaySearch" >     
         <img src="../../../assets/img/pesquisa.svg" alt="pesquisa" class="button__pesquisa" (click)="toggleAbaPesquisa()">
     </div>
     <div *ngIf="estaLogado(); else loginSection" class="item_cabecalho __iconLogin">

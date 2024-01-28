@@ -15,8 +15,10 @@ export class HeaderComponent implements  OnInit{
 
 searchControl = new FormControl(); 
 exibirAbaPesquisa: boolean = false;
+
 screenSize!: { width: number, height: number };
 delay: number = 4000;
+
 displaySearch = '';
 displayPosition = '';
 maxSearch = '';
@@ -84,12 +86,14 @@ maxSearch = '';
     {
       this.displaySearch = 'block'
       this.maxSearch = 'none'
+      
     }
     else if(this.screenSize.width <= 760 && this.exibirAbaPesquisa == true)
-    {
+    { 
+          
       this.displaySearch = 'block'
       this.displayPosition = 'absolute'
-      this.maxSearch = 'none'
+      this.maxSearch = 'none'     
     }
     else
     {
@@ -107,6 +111,7 @@ maxSearch = '';
     };
   }
 
+ 
   
 
 }
