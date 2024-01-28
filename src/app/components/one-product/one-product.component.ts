@@ -16,7 +16,7 @@ export class OneProductComponent {
   public product: any;
   private id: number;
   teste!: any[];
-  delay: number = 2000;
+  delay: number = 5000;
 
   constructor(
         private route: ActivatedRoute,
