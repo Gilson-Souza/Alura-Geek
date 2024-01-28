@@ -40,7 +40,7 @@
                     [(ngModel)]="modelo.category"
                     
                 >
-                    <option *ngFor="let categorie of categories" [value]="categorie">{{categorie}}</option>
+                    <option *ngFor="let category of categories" [value]="category">{{category}}</option>
                 </select>
                 <div  *ngIf="(category?.invalid && category?.touched) || category?.dirty">
                     <app-mensagem *ngIf="category?.errors?.['required']" mensagem="O campo categoria deve ser selecionado"></app-mensagem>  
