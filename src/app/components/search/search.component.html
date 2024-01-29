@@ -2,13 +2,7 @@
 <main class="__allproduct">
   
     <section class="produtos">
-      <div class="produto__apresentacao">
-        <div class="produto__titulo">
-          
-        </div>
-  
-            
-      </div>
+      
       <section class="produtos__lista" *ngIf="haveProduct(); else naoEncontrado" >
         <div class="produtos__itens" *ngFor="let products of result$">
           <img class="__imagem"  [src]="products.url" alt="{{products.name}}">
