@@ -25,7 +25,9 @@ body{
   textarea:focus {
     outline: none;
   }
-
+  select:focus{
+    outline: none;
+  }
   option:focus {
     outline: none;
   }
